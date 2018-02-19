@@ -19,3 +19,19 @@ web/.htaccess
 # Composer
 vendor/*
 !vendor/.gitkeep
+
+# General
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.log
+.tmp/
+*.sql
+*.sql.gz
+.sass-cache/
+*.css.map
+.vscode
