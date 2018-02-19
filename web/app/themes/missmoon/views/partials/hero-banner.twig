@@ -1,0 +1,14 @@
+<header class="hero-banner" role="banner" style="background-image: url('{{ post.thumbnail.src }}');">
+  <div class="hero-banner__inner _text-c _text-color-tertiary ">
+    <h1 class="hero-banner__title">{{ post.title }}</h1>
+    
+    {% if fn('is_front_page') %}
+      <a href="#" class="btn btn-primary">view sound collections</a>
+    {% endif %}
+    {% if fn('is_singular') %}
+      {% for item in post.get_field('meta_information') %}    
+        {{ item.info }}
+      {% endfor %}
+    {% endif %}
+  </div>
+</header>

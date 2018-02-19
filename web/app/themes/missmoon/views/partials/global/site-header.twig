@@ -1,0 +1,37 @@
+{# js warning #}
+<noscript>
+  <div class="_text-c _text-color-tertiary section site-notice site-notice--warning">
+    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+    You must have JavaScript enabled in your browser to utilize the full functionality of this website.
+  </div>
+</noscript>
+{# /js warning #}
+
+<!--[if lte IE 9]>
+	<div class="_text-c _text-color-tertiary section site-notice site-notice--warning">
+		<p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	</div>
+<![endif]-->
+
+{# site header #}
+<header id="masthead" class="section site-header js-site-header" role="banner">
+  <div class="site-header__row">
+    <div class="site-logo">
+      <a href="{{ site.url }}" rel="home">
+         <img src="{{ theme.link }}/assets/img/master-logo.png" width="265" height="60" alt="noisecreations">
+      </a>
+    </div>
+    <div class="site-header__toggler">
+      <button role="button" class="js-site-toggle-menu btn site-toggle-menu">
+        <span class="_sr-hidden">Toggle Menu</span>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </button>
+    </div>
+    <nav class="js-site-menu global-nav" role="navigation">
+      {# {% include "menu.twig" with {'menu': menu.get_items} %} #}
+    </nav><!-- #nav -->
+  </div>
+</header>
+{# /site header #}

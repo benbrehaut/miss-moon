@@ -1,0 +1,43 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<section class="sound-collections-item" id="post-{{ post.ID }}">
+	{% include 'partials/hero-banner.twig' %}
+
+	<div class="sound-details">
+		<div class="sound-details__demo _text-c">
+			<h2>{{ post.title }} demo</h2>
+			{{ post.get_field('soundcloud_demo') }}
+		</div>
+	</div>
+
+	<div class="sound-details">
+		<div class="sound-details__box _text-c">
+			<img src="{{ TimberImage(post.box_image).src }}" alt="{{ post.title }}">
+			{{ post.digital_good_store_links }}
+		</div>
+		<div class="sound-details__info">
+			{{ post.content }}
+		</div>
+	</div>
+	<div class="sound-details">
+		<div class="sound-details__meta _text-c">
+			[Download Only]
+      {% for pdf in post.get_field('pdf_links') %}    
+				{{ pdf.title }}
+				{{ pdf.PDF }}
+			{% endfor %}
+		</div>
+	</div>
+	<div class="sound-details">
+		<div class="sound-details__notices _text-c">
+			{{ options.purchase_information }}
+		</div>
+	</div>
+	<div class="sound-details">
+		<div class="sound-details__notices _text-c">
+			{{ options.copyright_notice }}
+		</div>
+	</div>
+</section>
+{% endblock %}

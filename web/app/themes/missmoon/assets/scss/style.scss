@@ -1,0 +1,86 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Vanlig
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Charset
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@charset 'utf-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Settings
+// Variables and site settings live here
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'settings/unit',
+        'settings/variables';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Tools
+// Contains functions / mixins to be used, it does not output any code.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'tools/value',
+        'tools/selector',
+        'tools/flex',
+        'tools/breakpoint',
+        'tools/mixins';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Vendor
+// 3rd Party Files (Ideally this should be very low)
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'vendor/wordpress';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Base
+// Very broad area of styling.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'base/reset',
+        'base/fonts',
+        'base/base';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Layout
+// Contains all the information for the grid.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'layout/row',
+        'layout/column',
+        'layout/size',
+        'layout/position',
+        'layout/gutter',
+        'layout/classes',
+        'layout/layout',
+        'layout/flex-grid',
+        'layout/grid';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Objects
+// Objects are designed patterns, from a pattern library or very inique items such as buttons, typography etc. Changing these will affect major parts of the site.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'objects/typography',
+        'objects/site-header',
+        'objects/site-navigation',
+        'objects/site-footer',
+        'objects/post-teaser',
+        'objects/callouts',
+        'objects/buttons',
+        'objects/lists',
+        'objects/icons',
+        'objects/pagination',
+        'objects/media-object',
+        'objects/breadcrumbs',
+        'objects/card',
+        'objects/skip-to-content',
+        'objects/hero-banner';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Components
+// Specific User Interface parts live here.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'components/news-article',
+        'components/forms';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Utilities
+// Utilities / helpers which are used throughout the site. This is very specific code bits.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'utilities/helpers';
