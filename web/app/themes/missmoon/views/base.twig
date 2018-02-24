@@ -7,18 +7,20 @@
 {% endblock %}
 
 	<body class="{{ body_class }}" data-template="base.twig">
-		{% block header %}
-			{% include 'partials/global/site-header.twig' %}
-		{% endblock %}
-
-		<main id="content" class="site-content" role="main" >
-			{% block content %}
-				Sorry, no content
+		<div class="l-site-wrapper">
+			{% block header %}
+				{% include 'partials/global/site-header.twig' %}
 			{% endblock %}
-		</main>
 
-		{% block footer %}
-			{% include 'partials/global/site-footer.twig' %}
-		{% endblock %}
+			<main id="content" class="site-content" role="main" >
+				{% block content %}
+					Sorry, no content
+				{% endblock %}
+			</main>
+
+			{% block footer %}
+				{% include 'partials/global/site-footer.twig' %}
+			{% endblock %}
+		</div>
 	</body>
 </html>

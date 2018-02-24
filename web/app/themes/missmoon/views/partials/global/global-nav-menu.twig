@@ -1,0 +1,11 @@
+{% if main_navigation %}
+	<ul class="o-global-nav__items o-unstyled-list">
+		{% for item in main_navigation %}
+			<li class="o-global-nav__item {{ item.current ? 'is-active' }}">
+				<a target="{{ item.target }}" href="{{ item.link }}" class="o-global-nav__link">
+					{{ item.title }}
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endif %}

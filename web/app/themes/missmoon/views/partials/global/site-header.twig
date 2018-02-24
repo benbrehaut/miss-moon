@@ -14,24 +14,43 @@
 <![endif]-->
 
 {# site header #}
-<header id="masthead" class="section site-header js-site-header" role="banner">
-  <div class="site-header__row">
-    <div class="site-logo">
-      <a href="{{ site.url }}" rel="home">
-         <img src="{{ theme.link }}/assets/img/master-logo.png" width="265" height="60" alt="noisecreations">
-      </a>
-    </div>
-    <div class="site-header__toggler">
-      <button role="button" class="js-site-toggle-menu btn site-toggle-menu">
-        <span class="_sr-hidden">Toggle Menu</span>
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-      </button>
-    </div>
-    <nav class="js-site-menu global-nav" role="navigation">
-      {# {% include "menu.twig" with {'menu': menu.get_items} %} #}
-    </nav><!-- #nav -->
+<header id="masthead" class="o-site-header js-site-header" role="banner">
+  {# header wrap #}
+  <div class="o-site-header__wrap">
+    {# header logo #}
+      <div class="o-site-header__logo">
+        <a href="{{ site.url }}" rel="home">
+          Logo
+        </a>
+      </div>
+    {# /header logo #}
+    {# header nav #}
+      <nav class="o-global-nav" role="navigation">
+        {% include "views/partials/global/global-nav-menu.twig" with {'main_navigation': menu.get_items} %}
+      </nav>
+    {# /header nav #}
+    {# header meta #}
+      <div class="o-site-header__meta">
+        {% include "partials/social-icons.twig" %}
+        
+        <a href="JavaScript:Void(0)" id="js-toggle-search">
+          <svg class="icon">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+        </a>
+      </div>
+    {# /header meta #}
+    {# header toggle #}
+      <div class="o-site-header__toggler">
+        <button role="button" class="js-site-toggle-menu o-btn site-toggle-menu">
+          <span class="_sr-hidden">Toggle Menu</span>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </button>
+      </div>
+    {# /header toggle #}
   </div>
+  {# /header wrap #}
 </header>
 {# /site header #}

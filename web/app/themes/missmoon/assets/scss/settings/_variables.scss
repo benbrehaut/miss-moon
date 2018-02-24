@@ -10,34 +10,44 @@
 // Local Colors
 // These should only be referenced in this file
 // - - - - - - - -
-$white: #FBFBFB !default;
 $light-grey: #F0F0F0 !default;
 $silver: #BFBFBF !default;
-$dark-grey: #202021 !default;
-$black: #000000 !default;
+$dark-grey: #222 !default;
 $ebony-clay: #242a39 !default;
+
 $red: #b74a48 !default;
 $orange: #ffae00 !default;
 $green: #26b27b !default;
 $turquoise: #40E4B5;
 
+$mercury: #e5e5e5 !default;
+$white: #fff !default;
+$concrete: #F2F2F2 !default;
+$boulder: #757575 !default;
+$gallery: #ECECEC !default;
+$mine-shaft: #222 !default;
+$black: #000000 !default;
+$bossanova: #45234A !default;
+$strikemaster: #84577C !default;
+
 // Global Colors
 // These should be used outside of this file
 // - - - - - - - -
-$palette-primary: $ebony-clay;
-$palette-accent: $turquoise;
-$palette-secondary: $light-grey;
-$palette-tertiary: $white;
+$palette-primary: $bossanova;
+$palette-primary--lighter: $strikemaster;
+$palette-secondary: $white;
+$palette-tertiary: $concrete;
+$palette-accent: $palette-primary;
 
 $palette-error: $red;
 $palette-warning: $orange;
 $palette-success: $green;
 
-$palette-heading: $dark-grey;
-$palette-paragraph: $dark-grey;
+$palette-heading: $black;
+$palette-paragraph: $mine-shaft;
 $palette-anchor: inherit;
 
-$palette-border: $silver;
+$palette-border: $gallery;
 
 // Social Media Colors
 // - - - - - - - -

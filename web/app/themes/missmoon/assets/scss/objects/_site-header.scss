@@ -6,35 +6,17 @@
   width: 100%;
   padding-top: rem-calc(18);
   padding-bottom: rem-calc(18);
-  box-shadow: 0 3px 9px 0 rgba(0,0,0,.19);
+  background-color: $palette-secondary;
 
-  &__row {
+  &__wrap {
+    @include flex-grid-row;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
   }
 
   &__logo {
     margin-right: rem-calc(25);
     padding-left: rem-calc(10);
-  }
-
-  &__nav {
-    display: block;
-
-    &.is-active {
-      display: block;
-    }
-
-    @include breakpoint(small only) {
-      display: none;
-      position: absolute;
-      top: 42px;
-      left: 0;
-      width: 100%;
-      padding-top: rem-calc(10);
-      padding-bottom: rem-calc(10);
-      background-color: $palette-primary;
-    }
   }
 
   &__toggler {
